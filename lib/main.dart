@@ -51,13 +51,12 @@ class PortfolioHome extends StatelessWidget {
             ExperienceSection(),
             const SizedBox(height: 30),
 
-
             ProjectsSection(),
             const SizedBox(height: 30),
 
             ContactSection(),
 
-            FooterSection()
+            FooterSection(),
           ],
         ),
       ),
@@ -67,7 +66,6 @@ class PortfolioHome extends StatelessWidget {
   Widget sectionTitle(String text) {
     return Text(text, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold));
   }
-
 
   static Widget contactLink(String emoji, String label, String url) {
     return TextButton.icon(onPressed: () => launchURL(url), icon: Text(emoji), label: Text(label));
@@ -79,5 +77,4 @@ class PortfolioHome extends StatelessWidget {
       throw Exception('Could not launch $mainUrl');
     }
   }
-
 }
