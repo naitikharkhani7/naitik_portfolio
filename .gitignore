@@ -1,0 +1,22 @@
+# Build
+build/
+.dart_tool/
+.packages
+.pub-cache/
+
+# Web build
+web_build/     # if using a custom folder
+*.dart.js
+*.js.deps
+*.js.map
+
+# IDE settings
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# FVM Version Cache
+.fvm/
